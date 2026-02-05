@@ -21,13 +21,13 @@ class Settings(BaseSettings):
     
     # Security
     API_KEY: str = "your-secure-api-key-here"  # Platform's API key for webhook auth
-    GEMINI_API_KEY: str = "your-gemini-api-key-here"  # Google Gemini API key
+    GROQ_API_KEY: str = "your-groq-api-key-here"
     
-    # Gemini Configuration
-    GEMINI_MODEL: str = "gemini-1.5-flash"
-    GEMINI_MAX_TOKENS: int = 1024
-    GEMINI_TEMPERATURE: float = 0.7
-    GEMINI_TIMEOUT: int = 30  # seconds
+    # Groq Configuration
+    GROQ_MODEL: str = "llama-3.1-8b-instant"  # High rate limit model
+    GROQ_MAX_TOKENS: int = 1024
+    GROQ_TEMPERATURE: float = 0.7
+    GROQ_TIMEOUT: int = 30  # seconds
     
     # Agent Configuration
     MAX_CONVERSATION_TURNS: int = 15

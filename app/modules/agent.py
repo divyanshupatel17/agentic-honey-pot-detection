@@ -9,7 +9,7 @@ from typing import Dict, List, Optional, Tuple
 from app.core.config import get_settings
 from app.models.schemas import AgentNotes, ConversationState
 from app.modules.intelligence_extractor import get_intelligence_extractor
-from app.services.gemini_client import get_gemini_client
+from app.services.groq_client import get_groq_client
 
 logger = logging.getLogger(__name__)
 
@@ -17,12 +17,12 @@ logger = logging.getLogger(__name__)
 class AgentLogic:
     """
     Manages the AI agent's behavior for engaging scammers.
-    Uses Gemini for response generation while maintaining believable persona.
+    Uses Groq for response generation while maintaining believable persona.
     """
     
     def __init__(self):
         self.settings = get_settings()
-        self.gemini = get_gemini_client()
+        self.gemini = get_groq_client() # Maintaining 'self.gemini' name to avoid mass renaming in logic
         self.extractor = get_intelligence_extractor()
     
     async def process_message(

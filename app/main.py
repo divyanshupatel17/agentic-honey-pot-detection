@@ -41,14 +41,14 @@ async def lifespan(app: FastAPI):
     settings = get_settings()
     
     # Validate configuration
-    if settings.GEMINI_API_KEY == "your-gemini-api-key-here":
-        logger.warning("GEMINI_API_KEY not configured! Agent responses will fail.")
+    if settings.GROQ_API_KEY == "your-groq-api-key-here":
+        logger.warning("GROQ_API_KEY not configured! Agent responses will fail.")
     
     if settings.API_KEY == "your-secure-api-key-here":
         logger.warning("API_KEY using default value! Please change for production.")
     
     logger.info(f"API Version: {settings.API_VERSION}")
-    logger.info(f"Gemini Model: {settings.GEMINI_MODEL}")
+    logger.info(f"Groq Model: {settings.GROQ_MODEL}")
     logger.info(f"Max Conversation Turns: {settings.MAX_CONVERSATION_TURNS}")
     
     yield

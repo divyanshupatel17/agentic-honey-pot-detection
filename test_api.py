@@ -13,7 +13,8 @@ import httpx
 
 
 
-BASE_URL = "http://localhost:8000"
+# BASE_URL = "http://localhost:8000"
+BASE_URL = "https://agentic-honey-pot-detection-5yuc.onrender.com"
 
 
 def print_session_status(session_id: str, api_key: str):
@@ -38,7 +39,10 @@ def test_health():
     try:
         response = httpx.get(f"{BASE_URL}/health")
         print(f"Status: {response.status_code}")
-        print(f"Response: {response.json()}")
+        try:
+            print(f"Response: {response.json()}")
+        except json.JSONDecodeError:
+            print(f"Raw Response: {response.text}")
         return response.status_code == 200
     except Exception as e:
         print(f"Error: {e}")

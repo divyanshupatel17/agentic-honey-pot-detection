@@ -9,8 +9,8 @@ pydantic-settings==2.1.0
 # HTTP Client for callbacks
 httpx==0.26.0
 
-# Google Gemini API
-google-generativeai>=0.7.0
+# Groq API
+groq>=0.4.0
 
 # Python Dotenv for environment variables
 python-dotenv==1.0.0
