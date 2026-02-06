@@ -1,0 +1,36 @@
+
+Agentic Honey-Pot – API Endpoint Tester
+
+Active
+
+
+This Honeypot API Endpoint Tester allows participants to validate whether their deployed honeypot service is reachable, secured, and responding correctly. The tester verifies authentication, endpoint availability, and response behavior using a simple request.
+
+How to Use the Honeypot Endpoint Tester
+
+This tool helps participants verify that their Honeypot API endpoint is properly deployed and secured.
+
+Steps:
+
+Enter your deployed Honeypot API endpoint URL
+Provide the required API key in the request header
+Click Test Honeypot Endpoint to send the request
+What This Tests:
+
+API authentication using headers
+Endpoint availability and connectivity
+Proper request handling
+Response structure and status codes
+Basic honeypot behavior validation
+Note: This tester is for validation only. The final evaluation will involve automated security interaction scenarios.
+
+
+Details to fill: 
+Agentic Honey-Pot – API Endpoint Tester
+This Honeypot API Endpoint Tester allows participants to validate whether their deployed honeypot service is reachable, secured, and responding correctly. The tester verifies authentication, endpoint availability, and response behavior using a simple request.
+
+Headers *
+x-api-key *
+Enter x-api-key
+Honeypot API Endpoint URL *
+Enter honeypot api endpoint url

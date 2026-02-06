@@ -1,3 +1,11 @@
+| | |
+|---|---|
+| **Project Name** | Agentic Honey-Pot for Scam Detection & Intelligence Extraction |
+| **Hackathon** | India AI Impact Buildathon |
+| **Organizer** | GUVI - HCL |
+| **Hackathon URL** | [Event Page](https://hackathon.guvi.in/timeline?hackathon-id=a90c3b95-4406-46b9-870d-b52d0e430a6f) |
+| **Team Lead** | Divyanshu Patel |
+
 # 🍯 Agentic Honey-Pot for Scam Detection & Intelligence Extraction
 
 A production-ready FastAPI backend that acts as an intelligent honey-pot system to detect scam attempts, engage scammers with an AI-powered elderly persona, and extract actionable intelligence for law enforcement.
